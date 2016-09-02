@@ -3,6 +3,25 @@ mitmproxy
 
 |travis| |coveralls| |downloads| |latest_release| |python_versions|
 
+TL;DR
+-----
+
+.. code-block:: text
+
+    pip install venv
+    git clone git@github.com:stelcheck/mitmproxy.git
+    cd mitmproxy
+    git checkout -b features/locust origin/features/locust
+    ./dev.sh
+    . venv/bin/activate
+    pip install pyzmq
+    pip install locustio
+    mitmdump --anticache -s "./locust_extractor.py login"
+
+
+Returning you to your normal broadcast...
+------------------------------------------
+
 This repository contains the **mitmproxy** and **pathod** projects, as well as their shared networking library, **netlib**.
 
 ``mitmproxy`` is an interactive, SSL-capable intercepting proxy with a console interface.
